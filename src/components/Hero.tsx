@@ -3,10 +3,10 @@ import { Button } from './Button'
 import { StaggerContainer, staggerItem } from './AnimatedSection'
 
 const stats = [
-  { value: '3+', label: 'года QA' },
-  { value: '350+', label: 'E2E + API' },
-  { value: 'PW', label: 'Automation' },
-  { value: 'Qo', label: 'ownership' },
+  { value: '3+ года QA', label: 'Product teams' },
+  { value: '350+ автотестов', label: 'E2E + API' },
+  { value: 'Playwright + TS', label: 'Automation' },
+  { value: 'Quality ownership', label: 'От требований до релиза' },
 ]
 
 const heroCards = [
@@ -96,11 +96,13 @@ export function Hero() {
               <div className="mt-8 grid grid-cols-2 gap-3">
                 {stats.map((stat) => (
                   <div
-                    key={stat.label}
+                    key={stat.value}
                     className="rounded-2xl bg-avia-surface px-4 py-3 text-center"
                   >
-                    <div className="text-2xl font-bold text-avia-blue">{stat.value}</div>
-                    <div className="mt-0.5 text-xs text-avia-text-muted">{stat.label}</div>
+                    <div className="text-sm font-bold leading-snug text-avia-blue">
+                      {stat.value}
+                    </div>
+                    <div className="mt-1 text-xs text-avia-text-muted">{stat.label}</div>
                   </div>
                 ))}
               </div>
