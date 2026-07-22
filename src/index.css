@@ -1,0 +1,30 @@
+@import 'tailwindcss';
+
+@theme {
+  --color-avia-blue: #0c73fe;
+  --color-avia-blue-dark: #0555c4;
+  --color-avia-blue-light: #e8f2ff;
+  --color-avia-blue-muted: #b3d4ff;
+  --color-avia-orange: #ff6d00;
+  --color-avia-surface: #f5f7fa;
+  --color-avia-text: #1a1a2e;
+  --color-avia-text-muted: #6b7280;
+  --font-sans: 'Inter', system-ui, -apple-system, sans-serif;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: var(--font-sans);
+  color: var(--color-avia-text);
+  background-color: #ffffff;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+::selection {
+  background-color: var(--color-avia-blue-light);
+  color: var(--color-avia-blue-dark);
+}
