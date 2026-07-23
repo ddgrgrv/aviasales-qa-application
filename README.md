@@ -29,11 +29,5 @@ npm run preview
 2. Установите зависимости: `npm install`
 3. Задеплойте: `npm run deploy`
 
-Сайт будет доступен по адресу `https://<username>.github.io/<repo-name>/`
+Сайт будет доступен по адресу `https://ddgrgrv.github.io/aviasales-qa-application/`
 
-## Настройка контактов
-
-Обновите ссылки в `src/components/Footer.tsx`:
-- Telegram
-- Email
-- Ссылка на резюме (PDF в папке `public/`)
