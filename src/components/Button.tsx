@@ -28,11 +28,13 @@ export function Button({
 
   if (href) {
     const isExternal = href.startsWith('http') || href.startsWith('mailto')
+    const isPdf = href.endsWith('.pdf')
     return (
       <motion.a
         href={href}
-        target={isExternal ? '_blank' : undefined}
-        rel={isExternal ? 'noopener noreferrer' : undefined}
+        target={isExternal || isPdf ? '_blank' : undefined}
+        rel={isExternal || isPdf ? 'noopener noreferrer' : undefined}
+        download={isPdf ? 'Daria_Grigoreva_QA_CV.pdf' : undefined}
         className={classes}
         whileHover={{ scale: 1.02 }}
         whileTap={{ scale: 0.98 }}

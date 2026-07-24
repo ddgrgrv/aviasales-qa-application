@@ -3,7 +3,11 @@ import { Button } from './Button'
 import { AnimatedSection } from './AnimatedSection'
 
 const links = [
-  { label: 'Скачать резюме', href: '#', variant: 'primary' as const },
+  {
+    label: 'Скачать резюме',
+    href: `${import.meta.env.BASE_URL}resume.pdf`,
+    variant: 'primary' as const,
+  },
   { label: 'Telegram', href: 'https://t.me/ddgrgrv', variant: 'secondary' as const },
   { label: 'Email', href: 'mailto:dashagrgrv121@gmail.com', variant: 'secondary' as const },
 ]
